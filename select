@@ -1,0 +1,21 @@
+select * 
+from table1_name
+# first specify the columbs you want it to select useing there headers in this case * witch means all coulumbs
+# then specify the table you want it to select these coulumbs from
+
+
+
+
+
+SELECT table_name.columb_name, 2ndtables_name.columb_name, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID;
+
+
+
+##performance
+#if you tell it to look in multiple tables you may want to specify the table it should select from so it dosnt have to go through all tables ie
+
+select table1_name.T1coulumb1_name , table2_name.T2coulumb1_name
+from orders , products
