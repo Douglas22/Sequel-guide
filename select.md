@@ -37,4 +37,3 @@ in some cases you may want to join two seprat querys rather than just search 2 t
     FROM table1_name
     INNER JOIN tables2_name
     ON table1_name.T1columb1_name = tables2_name.T2columb3_name;  #assuming table1's first columb and table2's second are the same
-
